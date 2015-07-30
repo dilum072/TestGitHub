@@ -1,0 +1,340 @@
+html {
+	font-family: "Roboto";
+}
+body {
+	background: #fff;
+	min-width: 319px;
+	font-family: "Roboto";
+}
+/* Font CSS */
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url('../fonts/Roboto-Thin.eot');
+	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/Roboto-Thin.woff') format('woff'), 
+	url('../fonts/Roboto-Thin.ttf') format('truetype'), 
+	url('../fonts/Roboto-Thin.svg#roboto-regular-webfont') format('svg');
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-regular-webfont.eot');
+	src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/roboto-regular-webfont.woff') format('woff'), 
+	url('../fonts/roboto-regular-webfont.ttf') format('truetype'), 
+	url('../fonts/roboto-regular-webfont.svg#roboto-regular-webfont') format('svg');
+}
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/roboto-medium-webfont.eot');
+	src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/roboto-medium-webfont.woff') format('woff'), 
+	url('../fonts/roboto-medium-webfont.ttf') format('truetype'), 
+	url('../fonts/roboto-medium-webfont.svg#roboto-medium-webfont') format('svg');
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/Roboto-Bold.woff') format('woff'), 
+	url('../fonts/Roboto-Bold.ttf') format('truetype'), 
+	url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+}
+
+/*  Dongle Dashboard styles  */
+
+#dongle-insert {
+  border: 1px solid #eeeeee;
+  display: block;
+  height: 315px;
+  padding-top: 15px;
+  width: 770px;
+}
+#dongle-insert h1 {
+  margin: 0;
+}
+#dongle-insert .container {
+  width: 100%;
+}
+.valid-period {
+  color: #a7a7a7;
+  font-family: Roboto;
+  font-size: 11px;
+  line-height: 25px;
+  text-align: right;
+}
+.valid-period span {
+  font-family: Roboto-Medium;
+  color:#333;
+}
+
+.patt-block {
+	border-radius: 5px;
+	float: left;
+	margin: 5px 0;
+	padding: 15px;
+	position: relative;
+	width: 100%;
+}
+.patt-block.bot-margin {
+  margin-bottom: 8px;
+}
+.patt-block.blue {
+	background: url(../images/dongle-dashboard/patton-blue.png) repeat top left;
+}
+.patt-block.gray .total-price {
+	float: right;
+	color: #fff;
+	font-size: 20px;
+}
+.patt-block.pln {
+	border: 1px solid #cfcfcf;
+	background-color: #e7f1ff;
+	padding: 30px 15px;
+}
+.patt-block.pln p {
+	color: #9985;
+	font-size: 18px;
+	font-family: 'Roboto-Bold';
+	margin: 0 auto;
+	text-align: center;
+}
+#dongle-insert h6 {
+  color: #fff;
+  margin: 3px 0;
+}
+
+/* colblock-three Start */
+.patt-block .colblock-three ul {
+	float: left;
+	width: 100%;
+}
+.patt-block .colblock-three ul li {
+  border-left: 1px solid #ffffff;
+  color: #fff;
+  float: left;
+  font-family: "Roboto-Medium";
+  font-size: 1em;
+  height: 85px;
+  padding: 10px 5px;
+  text-align: center;
+  width: 33.33%;
+}
+.patt-block .colblock-three ul li:first-child {
+	border: 0 none;
+}
+.patt-block .colblock-three ul li span {
+  display: block;
+  font-family: "Roboto-Medium";
+  font-size: 1.25em;
+  line-height: 22px;
+}
+.userdetail-outer .usage-center {
+  color: #3a3a3a;
+  font-family: "Roboto";
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.usage-left {
+  margin-top: 15px;
+}
+/* colblock-three End */
+
+/* User Detail Start */
+.userdetail-outer {
+  border-top: 1px solid #9f9f9f;
+  float: left;
+  margin-top: 12px;
+  min-height: 117px;
+  padding-left: 110px;
+  position: relative;
+  width: 100%;
+}
+div.userdetail-outer:first-of-type {
+	border: 0 none;
+}
+.userdetail-outer .usage-ouetr {
+	border-top: 1px solid #ececec;
+	padding: 5px 0;
+	margin-left: 0;
+}
+.userdetail-outer .usage-ouetr:first-child {
+	border: 0;
+}
+.usagecat-block {
+	border: 1px solid #b2b2b2;
+	margin: 30px 0;
+	padding-top: 10px;
+	position: relative;
+}
+.userdetail-outer .usage-left .title {
+	float: left;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.userdetail-outer .usage-left .title label span {
+	color: #3a3a3a;
+	font-size: 12px;
+	margin: 0 15px 0 2px;
+	vertical-align: baseline;
+}
+.userdetail-outer .usage-left .title label.left {
+	font-size: 16px;
+	font-family: 'Roboto-Medium';
+	font-weight: normal;
+}
+.userdetail-outer .usage-left .title label.right {
+	color: 3a3a3a;
+	font-size: 12px;
+	font-family: 'Roboto';
+	font-weight: normal;
+	vertical-align: baseline;
+	padding-top: 3px;
+}
+.userdetail-outer .usage-center {
+  color: #3a3a3a;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.userdetail-outer .usage-center span {
+  color: #3399ff;
+  display: inline;
+  font-family: "Roboto-Medium";
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+/* progress bar start */
+.userdetail-outer .progress {
+	background-color: #d3d3d3;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) inset;
+	height: 8px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+	clear: both;
+}
+.userdetail-outer .progress-bar-info {
+	background-color: #5bc0de;
+}
+.progress-footer {
+	color: #0055ab;
+	font-size: 12px;
+}
+.progress-footer span {
+	color: #1d1d1d;
+	font-weight: bold;
+}
+/* progress bar end */
+
+.userdetail-catblock {
+	border: 9px solid #cfcfcf;
+	border-radius: 100px;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	height: 97px;
+	padding-top: 23px;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Roboto-Medium';
+	text-align: center;
+	width: 97px;
+}
+/* Blue*/
+.userdetail-outer.blue .userdetail-catblock, .catblock-list-outer .inner.blue .userdetail-catblock {
+	background: url(../images/dongle-dashboard/patton-blue.png) repeat;
+	border-color: #d4e6ff;
+}
+.userdetail-outer.blue .progress-bar-info {
+	background: url(../images/dongle-dashboard/patton-blue.png);
+}
+.userdetail-outer.blue .progress-bar-info.sub {
+	background: url(../images/dongle-dashboard/patton-blue-sub.png);
+}
+.userdetail-outer.blue .usage-left .title label.left {
+	color: #0055ab;
+}
+.userdetail-outer.blue .usage-left .title label.left.sub {
+	color: #3588ff;
+}
+/* End of Dongle Dashboard styles  */
+
+
+
+/* H Tags CSS */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Roboto-Medium';
+	font-weight: normal;
+}
+h1, .h1 {
+	color: #002e87;
+	font-size: 22px;
+}
+h2, .h2 {
+	color: #3ac22a;
+	font-size: 26px;
+}
+h3, .h3 {
+	color: #3ac22a;
+	font-size: 20px;
+}
+h4, .h4 {
+	color: #0055ab;
+	font-size: 18px;
+}
+h5, .h5 {
+	color: #0055ab;
+	font-size: 16px;
+}
+h6, .h6 {
+	color: #4b4949;
+	font-size: 14px;
+}
+h1 a, .h1 a {
+	color: #002E87;
+	text-decoration: none;
+}
+h2 a, .h2 a {
+	color: #3AC22A;
+	text-decoration: none;
+}
+h3 a, .h3 a {
+	color: #3AC22A;
+	text-decoration: none;
+}
+h4 a, .h4 a {
+	color: #0055AB;
+	text-decoration: none;
+}
+h5 a, .h5 a {
+	color: #0055AB;
+	text-decoration: none;
+}
+h6 a, .h6 a {
+	color: #4B4949;
+	text-decoration: none;
+}
+h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h4 a:hover, h5 a:hover, .h5 a:hover, h6 a:hover, .h6 a:hover {
+	text-decoration: underline;
+}
+h2.dark-blue, .h2.dark-blue, h3.dark-blue, .h3.dark-blue {
+	color: #0055ab;
+}
+
+/* end of H Tags CSS */
+
+
+hr {
+	border-top: 1px solid #bfbfbf;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}

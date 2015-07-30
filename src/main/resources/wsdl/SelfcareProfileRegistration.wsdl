@@ -1,0 +1,1374 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://user.selfcare.mobitel.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://user.selfcare.mobitel.com">
+  <types>
+    <xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://user.selfcare.mobitel.com" version="1.0">
+         <xsd:element name="accountVerify" type="tns:accountVerify"></xsd:element>
+         <xsd:element name="accountVerifyResponse" type="tns:accountVerifyResponse"></xsd:element>
+         <xsd:element name="addNumber" type="tns:addNumber"></xsd:element>
+         <xsd:element name="addNumberResponse" type="tns:addNumberResponse"></xsd:element>
+         <xsd:element name="addNumberVerify" type="tns:addNumberVerify"></xsd:element>
+         <xsd:element name="addNumberVerifyResponse" type="tns:addNumberVerifyResponse"></xsd:element>
+         <xsd:element name="authenticateUser" type="tns:authenticateUser"></xsd:element>
+         <xsd:element name="authenticateUserResponse" type="tns:authenticateUserResponse"></xsd:element>
+         <xsd:element name="changePassword" type="tns:changePassword"></xsd:element>
+         <xsd:element name="changePasswordResponse" type="tns:changePasswordResponse"></xsd:element>
+         <xsd:element name="deleteUser" type="tns:deleteUser"></xsd:element>
+         <xsd:element name="deleteUserResponse" type="tns:deleteUserResponse"></xsd:element>
+         <xsd:element name="findUserNameForMoblieNumber" type="tns:findUserNameForMoblieNumber"></xsd:element>
+         <xsd:element name="findUserNameForMoblieNumberResponse" type="tns:findUserNameForMoblieNumberResponse"></xsd:element>
+         <xsd:element name="getSecurityQuestionForUser" type="tns:getSecurityQuestionForUser"></xsd:element>
+         <xsd:element name="getSecurityQuestionForUserResponse" type="tns:getSecurityQuestionForUserResponse"></xsd:element>
+         <xsd:element name="getUser" type="tns:getUser"></xsd:element>
+         <xsd:element name="getUserResponse" type="tns:getUserResponse"></xsd:element>
+         <xsd:element name="getVerificationCodeForMobileNumber" type="tns:getVerificationCodeForMobileNumber"></xsd:element>
+         <xsd:element name="getVerificationCodeForMobileNumberResponse" type="tns:getVerificationCodeForMobileNumberResponse"></xsd:element>
+         <xsd:element name="isAccVerified" type="tns:isAccVerified"></xsd:element>
+         <xsd:element name="isAccVerifiedResponse" type="tns:isAccVerifiedResponse"></xsd:element>
+         <xsd:element name="isUserNameAvailable" type="tns:isUserNameAvailable"></xsd:element>
+         <xsd:element name="isUserNameAvailableResponse" type="tns:isUserNameAvailableResponse"></xsd:element>
+         <xsd:element name="listMobileNumbersForUser" type="tns:listMobileNumbersForUser"></xsd:element>
+         <xsd:element name="listMobileNumbersForUserResponse" type="tns:listMobileNumbersForUserResponse"></xsd:element>
+         <xsd:element name="listSecurityQuestions" type="tns:listSecurityQuestions"></xsd:element>
+         <xsd:element name="listSecurityQuestionsResponse" type="tns:listSecurityQuestionsResponse"></xsd:element>
+         <xsd:element name="registerAccount" type="tns:registerAccount"></xsd:element>
+         <xsd:element name="registerAccountResponse" type="tns:registerAccountResponse"></xsd:element>
+         <xsd:element name="registerCooperateAccount" type="tns:registerCooperateAccount"></xsd:element>
+         <xsd:element name="registerCooperateAccountResponse" type="tns:registerCooperateAccountResponse"></xsd:element>
+         <xsd:element name="removeNumber" type="tns:removeNumber"></xsd:element>
+         <xsd:element name="removeNumberResponse" type="tns:removeNumberResponse"></xsd:element>
+         <xsd:element name="resendAccVerificationCode" type="tns:resendAccVerificationCode"></xsd:element>
+         <xsd:element name="resendAccVerificationCodeResponse" type="tns:resendAccVerificationCodeResponse"></xsd:element>
+         <xsd:element name="resendVerificationCode" type="tns:resendVerificationCode"></xsd:element>
+         <xsd:element name="resendVerificationCodeResponse" type="tns:resendVerificationCodeResponse"></xsd:element>
+         <xsd:element name="resetPassword" type="tns:resetPassword"></xsd:element>
+         <xsd:element name="resetPasswordResponse" type="tns:resetPasswordResponse"></xsd:element>
+         <xsd:element name="sendForgotPasswordVerificationCode" type="tns:sendForgotPasswordVerificationCode"></xsd:element>
+         <xsd:element name="sendForgotPasswordVerificationCodeResponse" type="tns:sendForgotPasswordVerificationCodeResponse"></xsd:element>
+         <xsd:element name="updateAccount" type="tns:updateAccount"></xsd:element>
+         <xsd:element name="updateAccountResponse" type="tns:updateAccountResponse"></xsd:element>
+         <xsd:element name="verifyForgotPasswordVerificationCode" type="tns:verifyForgotPasswordVerificationCode"></xsd:element>
+         <xsd:element name="verifyForgotPasswordVerificationCodeResponse" type="tns:verifyForgotPasswordVerificationCodeResponse"></xsd:element>
+         <xsd:complexType name="accountVerify">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="verificationCode" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="accountVerifyResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="userProfileResponse">
+            <xsd:sequence>
+               <xsd:element name="status" type="xsd:int"></xsd:element>
+               <xsd:element minOccurs="0" name="statusDescription" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="removeNumber">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="removeNumber" type="tns:removeNumberFromAccountRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="removeNumberFromAccountRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="mobileNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="requestedBy" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="removeNumberResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resendVerificationCode">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="mobileNumber" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resendVerificationCodeResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="registerCooperateAccount">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="CooperateUser" type="tns:cooperateProfileRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="cooperateProfileRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="address1" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address2" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address3" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="birthDay" type="xsd:dateTime"></xsd:element>
+               <xsd:element minOccurs="0" name="companyName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="email" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="firstName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="gender" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="landNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="languagePref" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="lastName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="mobileNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="nicOrPassport" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="password" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="saluation" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="securityQuestion" type="tns:securityQuestion"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element name="verificationMethod" type="xsd:int"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="securityQuestion">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="answer" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="groupId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="id" type="xsd:string"></xsd:element>
+               <xsd:element name="order" type="xsd:int"></xsd:element>
+               <xsd:element minOccurs="0" name="question" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="registerCooperateAccountResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="isUserNameAvailable">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="isUserNameAvailableResponse">
+            <xsd:sequence>
+               <xsd:element name="return" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getUser">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getUserResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userDetails"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="userDetails">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="address1" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address2" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address3" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="birthday" type="xsd:dateTime"></xsd:element>
+               <xsd:element minOccurs="0" name="contactNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="email" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="firstName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="gender" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="langPref" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="lastName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="nicOrPassport" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="saluation" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="addNumber">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="mobile" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="addNumberResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="listMobileNumbersForUser">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="listMobileNumbersForUserResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:loginResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="loginResponse">
+            <xsd:sequence>
+               <xsd:element maxOccurs="unbounded" minOccurs="0" name="numebrList" nillable="true" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="primaryMobile" type="xsd:string"></xsd:element>
+               <xsd:element name="statusCode" type="xsd:int"></xsd:element>
+               <xsd:element minOccurs="0" name="statusDesc" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resetPassword">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="resetPassword" type="tns:resetPasswordRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resetPasswordRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="newPassword" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="requestedBy" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resetPasswordResponse">
+            <xsd:sequence>
+               <xsd:element name="return" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="findUserNameForMoblieNumber">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="mobile" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="findUserNameForMoblieNumberResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="verifyForgotPasswordVerificationCode">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="shortCode" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="verifyForgotPasswordVerificationCodeResponse">
+            <xsd:sequence>
+               <xsd:element name="return" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="deleteUser">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="deleteUser" type="tns:deleteUserRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="deleteUserRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="requestBy" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="deleteUserResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getVerificationCodeForMobileNumber">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="mobile" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getVerificationCodeForMobileNumberResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="changePassword">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="oldPassword" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="newPassword" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="changePasswordResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getSecurityQuestionForUser">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="getSecurityQuestionForUserResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:securityQuestion"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="authenticateUser">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="loginCredintials" type="tns:loginRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="loginRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="loginByApp" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="loginPassword" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="loginUserName" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="authenticateUserResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:loginResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="sendForgotPasswordVerificationCode">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="sendForgotPasswordVerificationCodeResponse">
+            <xsd:sequence>
+               <xsd:element name="return" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="registerAccount">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="User" type="tns:userProfileRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="userProfileRequest">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="addedBy" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address1" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address2" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="address3" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="birthDay" type="xsd:dateTime"></xsd:element>
+               <xsd:element minOccurs="0" name="email" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="firstName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="gender" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="landNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="languagePref" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="lastName" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="mobileNumber" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="nicOrPassport" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="password" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="saluation" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="securityQuestion" type="tns:securityQuestion"></xsd:element>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element name="verificationMethod" type="xsd:int"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="registerAccountResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="updateAccount">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="User" type="tns:userProfileRequest"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="updateAccountResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="addNumberVerify">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userId" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="verificationCode" type="xsd:string"></xsd:element>
+               <xsd:element minOccurs="0" name="mobileNumber" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="addNumberVerifyResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resendAccVerificationCode">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userName" type="xsd:string"></xsd:element>
+               <xsd:element name="verificationMethod" type="xsd:int"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="resendAccVerificationCodeResponse">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="return" type="tns:userProfileResponse"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="listSecurityQuestions">
+            <xsd:sequence></xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="listSecurityQuestionsResponse">
+            <xsd:sequence>
+               <xsd:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="tns:securityQuestion"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="isAccVerified">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="userName" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="isAccVerifiedResponse">
+            <xsd:sequence>
+               <xsd:element name="return" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:schema>
+  </types>
+  <message name="authenticateUser">
+    <part name="parameters" element="tns:authenticateUser">
+    </part>
+  </message>
+  <message name="registerAccountResponse">
+    <part name="parameters" element="tns:registerAccountResponse">
+    </part>
+  </message>
+  <message name="getSecurityQuestionForUser">
+    <part name="parameters" element="tns:getSecurityQuestionForUser">
+    </part>
+  </message>
+  <message name="changePassword">
+    <part name="parameters" element="tns:changePassword">
+    </part>
+  </message>
+  <message name="deleteUser">
+    <part name="parameters" element="tns:deleteUser">
+    </part>
+  </message>
+  <message name="changePasswordResponse">
+    <part name="parameters" element="tns:changePasswordResponse">
+    </part>
+  </message>
+  <message name="authenticateUserResponse">
+    <part name="parameters" element="tns:authenticateUserResponse">
+    </part>
+  </message>
+  <message name="verifyForgotPasswordVerificationCode">
+    <part name="parameters" element="tns:verifyForgotPasswordVerificationCode">
+    </part>
+  </message>
+  <message name="isUserNameAvailableResponse">
+    <part name="parameters" element="tns:isUserNameAvailableResponse">
+    </part>
+  </message>
+  <message name="addNumberVerifyResponse">
+    <part name="parameters" element="tns:addNumberVerifyResponse">
+    </part>
+  </message>
+  <message name="addNumberVerify">
+    <part name="parameters" element="tns:addNumberVerify">
+    </part>
+  </message>
+  <message name="updateAccount">
+    <part name="parameters" element="tns:updateAccount">
+    </part>
+  </message>
+  <message name="listSecurityQuestionsResponse">
+    <part name="parameters" element="tns:listSecurityQuestionsResponse">
+    </part>
+  </message>
+  <message name="findUserNameForMoblieNumberResponse">
+    <part name="parameters" element="tns:findUserNameForMoblieNumberResponse">
+    </part>
+  </message>
+  <message name="isAccVerifiedResponse">
+    <part name="parameters" element="tns:isAccVerifiedResponse">
+    </part>
+  </message>
+  <message name="addNumberResponse">
+    <part name="parameters" element="tns:addNumberResponse">
+    </part>
+  </message>
+  <message name="listMobileNumbersForUser">
+    <part name="parameters" element="tns:listMobileNumbersForUser">
+    </part>
+  </message>
+  <message name="getUser">
+    <part name="parameters" element="tns:getUser">
+    </part>
+  </message>
+  <message name="isUserNameAvailable">
+    <part name="parameters" element="tns:isUserNameAvailable">
+    </part>
+  </message>
+  <message name="getSecurityQuestionForUserResponse">
+    <part name="parameters" element="tns:getSecurityQuestionForUserResponse">
+    </part>
+  </message>
+  <message name="resendVerificationCodeResponse">
+    <part name="parameters" element="tns:resendVerificationCodeResponse">
+    </part>
+  </message>
+  <message name="getUserResponse">
+    <part name="parameters" element="tns:getUserResponse">
+    </part>
+  </message>
+  <message name="getVerificationCodeForMobileNumber">
+    <part name="parameters" element="tns:getVerificationCodeForMobileNumber">
+    </part>
+  </message>
+  <message name="resetPasswordResponse">
+    <part name="parameters" element="tns:resetPasswordResponse">
+    </part>
+  </message>
+  <message name="isAccVerified">
+    <part name="parameters" element="tns:isAccVerified">
+    </part>
+  </message>
+  <message name="resendAccVerificationCodeResponse">
+    <part name="parameters" element="tns:resendAccVerificationCodeResponse">
+    </part>
+  </message>
+  <message name="resendAccVerificationCode">
+    <part name="parameters" element="tns:resendAccVerificationCode">
+    </part>
+  </message>
+  <message name="listSecurityQuestions">
+    <part name="parameters" element="tns:listSecurityQuestions">
+    </part>
+  </message>
+  <message name="updateAccountResponse">
+    <part name="parameters" element="tns:updateAccountResponse">
+    </part>
+  </message>
+  <message name="deleteUserResponse">
+    <part name="parameters" element="tns:deleteUserResponse">
+    </part>
+  </message>
+  <message name="registerAccount">
+    <part name="parameters" element="tns:registerAccount">
+    </part>
+  </message>
+  <message name="sendForgotPasswordVerificationCode">
+    <part name="parameters" element="tns:sendForgotPasswordVerificationCode">
+    </part>
+  </message>
+  <message name="accountVerifyResponse">
+    <part name="parameters" element="tns:accountVerifyResponse">
+    </part>
+  </message>
+  <message name="registerCooperateAccount">
+    <part name="parameters" element="tns:registerCooperateAccount">
+    </part>
+  </message>
+  <message name="resendVerificationCode">
+    <part name="parameters" element="tns:resendVerificationCode">
+    </part>
+  </message>
+  <message name="registerCooperateAccountResponse">
+    <part name="parameters" element="tns:registerCooperateAccountResponse">
+    </part>
+  </message>
+  <message name="getVerificationCodeForMobileNumberResponse">
+    <part name="parameters" element="tns:getVerificationCodeForMobileNumberResponse">
+    </part>
+  </message>
+  <message name="removeNumber">
+    <part name="parameters" element="tns:removeNumber">
+    </part>
+  </message>
+  <message name="accountVerify">
+    <part name="parameters" element="tns:accountVerify">
+    </part>
+  </message>
+  <message name="removeNumberResponse">
+    <part name="parameters" element="tns:removeNumberResponse">
+    </part>
+  </message>
+  <message name="findUserNameForMoblieNumber">
+    <part name="parameters" element="tns:findUserNameForMoblieNumber">
+    </part>
+  </message>
+  <message name="resetPassword">
+    <part name="parameters" element="tns:resetPassword">
+    </part>
+  </message>
+  <message name="listMobileNumbersForUserResponse">
+    <part name="parameters" element="tns:listMobileNumbersForUserResponse">
+    </part>
+  </message>
+  <message name="sendForgotPasswordVerificationCodeResponse">
+    <part name="parameters" element="tns:sendForgotPasswordVerificationCodeResponse">
+    </part>
+  </message>
+  <message name="addNumber">
+    <part name="parameters" element="tns:addNumber">
+    </part>
+  </message>
+  <message name="verifyForgotPasswordVerificationCodeResponse">
+    <part name="parameters" element="tns:verifyForgotPasswordVerificationCodeResponse">
+    </part>
+  </message>
+  <portType name="userPortType">
+    <operation name="getUser">
+      <input message="tns:getUser" wsaw:Action="getUser">
+    </input>
+      <output message="tns:getUserResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/getUserResponse">
+    </output>
+    </operation>
+    <operation name="findUserNameForMoblieNumber">
+      <input message="tns:findUserNameForMoblieNumber" wsaw:Action="findUserNameForMoblieNumber">
+    </input>
+      <output message="tns:findUserNameForMoblieNumberResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/findUserNameForMoblieNumberResponse">
+    </output>
+    </operation>
+    <operation name="getSecurityQuestionForUser">
+      <input message="tns:getSecurityQuestionForUser" wsaw:Action="getSecurityQuestionForUser">
+    </input>
+      <output message="tns:getSecurityQuestionForUserResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/getSecurityQuestionForUserResponse">
+    </output>
+    </operation>
+    <operation name="resetPassword">
+      <input message="tns:resetPassword" wsaw:Action="resetPassword">
+    </input>
+      <output message="tns:resetPasswordResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/resetPasswordResponse">
+    </output>
+    </operation>
+    <operation name="accountVerify">
+      <input message="tns:accountVerify" wsaw:Action="accountVerify">
+    </input>
+      <output message="tns:accountVerifyResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/accountVerifyResponse">
+    </output>
+    </operation>
+    <operation name="authenticateUser">
+      <input message="tns:authenticateUser" wsaw:Action="authenticateUser">
+    </input>
+      <output message="tns:authenticateUserResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/authenticateUserResponse">
+    </output>
+    </operation>
+    <operation name="listSecurityQuestions">
+      <input message="tns:listSecurityQuestions" wsaw:Action="listSecurityQuestions">
+    </input>
+      <output message="tns:listSecurityQuestionsResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/listSecurityQuestionsResponse">
+    </output>
+    </operation>
+    <operation name="isUserNameAvailable">
+      <input message="tns:isUserNameAvailable" wsaw:Action="isUserNameAvailable">
+    </input>
+      <output message="tns:isUserNameAvailableResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/isUserNameAvailableResponse">
+    </output>
+    </operation>
+    <operation name="isAccVerified">
+      <input message="tns:isAccVerified" wsaw:Action="isAccVerified">
+    </input>
+      <output message="tns:isAccVerifiedResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/isAccVerifiedResponse">
+    </output>
+    </operation>
+    <operation name="listMobileNumbersForUser">
+      <input message="tns:listMobileNumbersForUser" wsaw:Action="listMobileNumbersForUser">
+    </input>
+      <output message="tns:listMobileNumbersForUserResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/listMobileNumbersForUserResponse">
+    </output>
+    </operation>
+    <operation name="sendForgotPasswordVerificationCode">
+      <input message="tns:sendForgotPasswordVerificationCode" wsaw:Action="sendForgotPasswordVerificationCode">
+    </input>
+      <output message="tns:sendForgotPasswordVerificationCodeResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/sendForgotPasswordVerificationCodeResponse">
+    </output>
+    </operation>
+    <operation name="updateAccount">
+      <input message="tns:updateAccount" wsaw:Action="updateAccount">
+    </input>
+      <output message="tns:updateAccountResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/updateAccountResponse">
+    </output>
+    </operation>
+    <operation name="addNumber">
+      <input message="tns:addNumber" wsaw:Action="addNumber">
+    </input>
+      <output message="tns:addNumberResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/addNumberResponse">
+    </output>
+    </operation>
+    <operation name="changePassword">
+      <input message="tns:changePassword" wsaw:Action="changePassword">
+    </input>
+      <output message="tns:changePasswordResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/changePasswordResponse">
+    </output>
+    </operation>
+    <operation name="resendAccVerificationCode">
+      <input message="tns:resendAccVerificationCode" wsaw:Action="resendAccVerificationCode">
+    </input>
+      <output message="tns:resendAccVerificationCodeResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/resendAccVerificationCodeResponse">
+    </output>
+    </operation>
+    <operation name="registerCooperateAccount">
+      <input message="tns:registerCooperateAccount" wsaw:Action="registerCooperateAccount">
+    </input>
+      <output message="tns:registerCooperateAccountResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/registerCooperateAccountResponse">
+    </output>
+    </operation>
+    <operation name="getVerificationCodeForMobileNumber">
+      <input message="tns:getVerificationCodeForMobileNumber" wsaw:Action="getVerificationCodeForMobileNumber">
+    </input>
+      <output message="tns:getVerificationCodeForMobileNumberResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/getVerificationCodeForMobileNumberResponse">
+    </output>
+    </operation>
+    <operation name="removeNumber">
+      <input message="tns:removeNumber" wsaw:Action="removeNumber">
+    </input>
+      <output message="tns:removeNumberResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/removeNumberResponse">
+    </output>
+    </operation>
+    <operation name="registerAccount">
+      <input message="tns:registerAccount" wsaw:Action="registerAccount">
+    </input>
+      <output message="tns:registerAccountResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/registerAccountResponse">
+    </output>
+    </operation>
+    <operation name="addNumberVerify">
+      <input message="tns:addNumberVerify" wsaw:Action="addNumberVerify">
+    </input>
+      <output message="tns:addNumberVerifyResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/addNumberVerifyResponse">
+    </output>
+    </operation>
+    <operation name="resendVerificationCode">
+      <input message="tns:resendVerificationCode" wsaw:Action="resendVerificationCode">
+    </input>
+      <output message="tns:resendVerificationCodeResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/resendVerificationCodeResponse">
+    </output>
+    </operation>
+    <operation name="deleteUser">
+      <input message="tns:deleteUser" wsaw:Action="deleteUser">
+    </input>
+      <output message="tns:deleteUserResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/deleteUserResponse">
+    </output>
+    </operation>
+    <operation name="verifyForgotPasswordVerificationCode">
+      <input message="tns:verifyForgotPasswordVerificationCode" wsaw:Action="verifyForgotPasswordVerificationCode">
+    </input>
+      <output message="tns:verifyForgotPasswordVerificationCodeResponse" wsaw:Action="http://user.selfcare.mobitel.com/UserManagementWebService/verifyForgotPasswordVerificationCodeResponse">
+    </output>
+    </operation>
+  </portType>
+  <binding name="userHttpBinding" type="tns:userPortType">
+    <http:binding verb="POST"></http:binding>
+    <operation name="getUser">
+      <http:operation location="getUser"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="findUserNameForMoblieNumber">
+      <http:operation location="findUserNameForMoblieNumber"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="getSecurityQuestionForUser">
+      <http:operation location="getSecurityQuestionForUser"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="resetPassword">
+      <http:operation location="resetPassword"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="accountVerify">
+      <http:operation location="accountVerify"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="authenticateUser">
+      <http:operation location="authenticateUser"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="listSecurityQuestions">
+      <http:operation location="listSecurityQuestions"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="isUserNameAvailable">
+      <http:operation location="isUserNameAvailable"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="isAccVerified">
+      <http:operation location="isAccVerified"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="listMobileNumbersForUser">
+      <http:operation location="listMobileNumbersForUser"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="sendForgotPasswordVerificationCode">
+      <http:operation location="sendForgotPasswordVerificationCode"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="updateAccount">
+      <http:operation location="updateAccount"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="changePassword">
+      <http:operation location="changePassword"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="addNumber">
+      <http:operation location="addNumber"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="resendAccVerificationCode">
+      <http:operation location="resendAccVerificationCode"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="registerCooperateAccount">
+      <http:operation location="registerCooperateAccount"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="getVerificationCodeForMobileNumber">
+      <http:operation location="getVerificationCodeForMobileNumber"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="removeNumber">
+      <http:operation location="removeNumber"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="registerAccount">
+      <http:operation location="registerAccount"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="addNumberVerify">
+      <http:operation location="addNumberVerify"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="resendVerificationCode">
+      <http:operation location="resendVerificationCode"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="deleteUser">
+      <http:operation location="deleteUser"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+    <operation name="verifyForgotPasswordVerificationCode">
+      <http:operation location="verifyForgotPasswordVerificationCode"></http:operation>
+      <input>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </input>
+      <output>
+        <mime:content part="parameters" type="text/xml"></mime:content>
+      </output>
+    </operation>
+  </binding>
+  <binding name="userSoap11Binding" type="tns:userPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <operation name="getUser">
+      <soap:operation soapAction="getUser" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="findUserNameForMoblieNumber">
+      <soap:operation soapAction="findUserNameForMoblieNumber" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="getSecurityQuestionForUser">
+      <soap:operation soapAction="getSecurityQuestionForUser" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="resetPassword">
+      <soap:operation soapAction="resetPassword" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="accountVerify">
+      <soap:operation soapAction="accountVerify" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="authenticateUser">
+      <soap:operation soapAction="authenticateUser" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="listSecurityQuestions">
+      <soap:operation soapAction="listSecurityQuestions" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="isUserNameAvailable">
+      <soap:operation soapAction="isUserNameAvailable" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="isAccVerified">
+      <soap:operation soapAction="isAccVerified" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="listMobileNumbersForUser">
+      <soap:operation soapAction="listMobileNumbersForUser" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="sendForgotPasswordVerificationCode">
+      <soap:operation soapAction="sendForgotPasswordVerificationCode" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="updateAccount">
+      <soap:operation soapAction="updateAccount" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="changePassword">
+      <soap:operation soapAction="changePassword" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="addNumber">
+      <soap:operation soapAction="addNumber" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="resendAccVerificationCode">
+      <soap:operation soapAction="resendAccVerificationCode" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="registerCooperateAccount">
+      <soap:operation soapAction="registerCooperateAccount" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="getVerificationCodeForMobileNumber">
+      <soap:operation soapAction="getVerificationCodeForMobileNumber" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="removeNumber">
+      <soap:operation soapAction="removeNumber" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="registerAccount">
+      <soap:operation soapAction="registerAccount" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="addNumberVerify">
+      <soap:operation soapAction="addNumberVerify" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="resendVerificationCode">
+      <soap:operation soapAction="resendVerificationCode" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="deleteUser">
+      <soap:operation soapAction="deleteUser" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+    <operation name="verifyForgotPasswordVerificationCode">
+      <soap:operation soapAction="verifyForgotPasswordVerificationCode" style="document"></soap:operation>
+      <input>
+        <soap:body use="literal"></soap:body>
+      </input>
+      <output>
+        <soap:body use="literal"></soap:body>
+      </output>
+    </operation>
+  </binding>
+  <binding name="userSoap12Binding" type="tns:userPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap12:binding>
+    <operation name="getUser">
+      <soap12:operation soapAction="getUser" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="findUserNameForMoblieNumber">
+      <soap12:operation soapAction="findUserNameForMoblieNumber" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="getSecurityQuestionForUser">
+      <soap12:operation soapAction="getSecurityQuestionForUser" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="resetPassword">
+      <soap12:operation soapAction="resetPassword" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="accountVerify">
+      <soap12:operation soapAction="accountVerify" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="authenticateUser">
+      <soap12:operation soapAction="authenticateUser" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="listSecurityQuestions">
+      <soap12:operation soapAction="listSecurityQuestions" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="isUserNameAvailable">
+      <soap12:operation soapAction="isUserNameAvailable" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="isAccVerified">
+      <soap12:operation soapAction="isAccVerified" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="listMobileNumbersForUser">
+      <soap12:operation soapAction="listMobileNumbersForUser" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="sendForgotPasswordVerificationCode">
+      <soap12:operation soapAction="sendForgotPasswordVerificationCode" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="updateAccount">
+      <soap12:operation soapAction="updateAccount" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="changePassword">
+      <soap12:operation soapAction="changePassword" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="addNumber">
+      <soap12:operation soapAction="addNumber" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="resendAccVerificationCode">
+      <soap12:operation soapAction="resendAccVerificationCode" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="registerCooperateAccount">
+      <soap12:operation soapAction="registerCooperateAccount" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="getVerificationCodeForMobileNumber">
+      <soap12:operation soapAction="getVerificationCodeForMobileNumber" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="removeNumber">
+      <soap12:operation soapAction="removeNumber" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="registerAccount">
+      <soap12:operation soapAction="registerAccount" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="addNumberVerify">
+      <soap12:operation soapAction="addNumberVerify" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="resendVerificationCode">
+      <soap12:operation soapAction="resendVerificationCode" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="deleteUser">
+      <soap12:operation soapAction="deleteUser" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+    <operation name="verifyForgotPasswordVerificationCode">
+      <soap12:operation soapAction="verifyForgotPasswordVerificationCode" style="document"></soap12:operation>
+      <input>
+        <soap12:body use="literal"></soap12:body>
+      </input>
+      <output>
+        <soap12:body use="literal"></soap12:body>
+      </output>
+    </operation>
+  </binding>
+  <service name="user">
+    <port name="userHttpSoap12Endpoint" binding="tns:userSoap12Binding">
+      <soap12:address location="http://appsext.mobitel.lk/services/user.userHttpSoap12Endpoint"></soap12:address>
+    </port>
+    <port name="userHttpsSoap11Endpoint" binding="tns:userSoap11Binding">
+      <soap:address location="https://appsext.mobitel.lk/services/user.userHttpsSoap11Endpoint"></soap:address>
+    </port>
+    <port name="userHttpEndpoint" binding="tns:userHttpBinding">
+      <http:address location="http://appsext.mobitel.lk/services/user.userHttpEndpoint"></http:address>
+    </port>
+    <port name="userHttpsEndpoint" binding="tns:userHttpBinding">
+      <http:address location="https://appsext.mobitel.lk/services/user.userHttpsEndpoint"></http:address>
+    </port>
+    <port name="userHttpsSoap12Endpoint" binding="tns:userSoap12Binding">
+      <soap12:address location="https://appsext.mobitel.lk/services/user.userHttpsSoap12Endpoint"></soap12:address>
+    </port>
+    <port name="userHttpSoap11Endpoint" binding="tns:userSoap11Binding">
+      <soap:address location="http://appsext.mobitel.lk/services/user.userHttpSoap11Endpoint"></soap:address>
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,57 @@
+.img-rounded{behavior: url(PIE.htc)}
+.img-circle{behavior: url(PIE.htc)}
+.table-bordered{behavior: url(PIE.htc)}
+select,textarea,input,code,pre{behavior: url(PIE.htc)}
+.input-group-addon{behavior: url(PIE.htc)}
+.btn{behavior: url(PIE.htc)}
+/*.dropdown-menu{behavior: url(PIE.htc)}*/
+.panel{behavior: url(PIE.htc)}
+.well{behavior: url(PIE.htc)}
+.nav-tabs > li > a{behavior: url(PIE.htc)}
+.nav-pills > li > a{behavior: url(PIE.htc)}
+.navbar{behavior: url(PIE.htc)}
+.navbar-nav > li > a{behavior: url(PIE.htc)}
+.navbar-toggle{behavior: url(PIE.htc)}
+.navbar-toggle .icon-bar{behavior: url(PIE.htc)}
+.breadcrumb{behavior: url(PIE.htc)}
+.pagination{behavior: url(PIE.htc)}
+.pager li > a,.pager li > span{behavior: url(PIE.htc)}
+.modal-content{behavior: url(PIE.htc)}
+.tooltip-inner{behavior: url(PIE.htc)}
+.popover{behavior: url(PIE.htc)}
+.popover-title{behavior: url(PIE.htc)}
+.alert{behavior: url(PIE.htc)}
+.thumbnail,.img-thumbnail{behavior: url(PIE.htc)}
+.label{behavior: url(PIE.htc)}
+.badge{behavior: url(PIE.htc)}
+.progress{behavior: url(PIE.htc)}
+.accordion-group{behavior: url(PIE.htc)}
+.carousel-indicators li{behavior: url(PIE.htc)}
+.jumbotron{behavior: url(PIE.htc)}
+
+/* My Style */
+input.search {behavior: url(PIE.htc);}
+.new-product .thumbnail .btn {behavior: url(PIE.htc);}
+.home-botblock .thumbnail .btn {behavior: url(PIE.htc);}
+.main > li{ behavior: url(PIE.htc);}
+
+
+/* Image Sliders */
+.rslides img,
+.inner-palin-banner, .inner-palin-banner img{ 
+    behavior: url(PIE.htc);
+}
+#webform-client-form-233{ 
+    behavior: url(PIE.htc);
+}
+button.close {
+    behavior: url(PIE.htc);
+}
+.userdetail-catblock{
+    behavior: url(PIE.htc);
+}
+.patt-block {
+    behavior: url(PIE.htc);
+}
+
+

@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 21, 2015, 3:07:59 PM
+    Author     : manjulas
+*/
+
+// confirm dialog box design
+.modal.error-popup button.close {
+    background: url(images/popup-closebutton.png) no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+}
+.modal.error-popup .modal-header .close {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    z-index: 100;
+    opacity: 1;
+}
+.modal.error-popup .modal-header {
+    border-bottom: 0;
+    padding:0;
+    min-height: inherit;
+}
+.modal.error-popup .modal-footer {
+    display: none;
+}
+.modal.error-popup .modal-dialog {
+    padding: 100px 10px;
+}
+.modal.error-popup .modal-body{
+    padding:10px;
+}
+.modal.error-popup .modalbody-inner{
+    background:url(../images/BG-MyAccount-erro-msg.png) no-repeat bottom right;
+    padding:30px;
+}
+.modal.error-popup h1{
+    color:#0055ab;
+    line-height:1;
+    text-align:center;
+}
+.modal.error-popup p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.42857em;
+    margin: 5px 0 15px;
+    text-align:center;
+}
+
+#myModal{    
+    aria-hidden : true;
+}

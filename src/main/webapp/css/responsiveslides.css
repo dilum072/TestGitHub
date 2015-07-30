@@ -1,0 +1,141 @@
+/* Themes Start */
+.rslides_container {
+	margin-bottom: 10px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.centered-btns_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 50%;
+	left: 10px;
+	opacity: 0.7;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 39px;
+	width: 39px;
+	background: transparent url("../images/themes.png") no-repeat left top;
+	margin-top: -35px;
+}
+.centered-btns_nav:active {
+	opacity: 1.0;
+}
+.centered-btns_nav.next {
+	left: auto;
+	background-position: right top;
+	right: 10px;
+	*right: 43px;
+}
+.transparent-btns_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 0;
+	left: 0;
+	display: block;
+	background: #fff; /* Fix for IE6-9 */
+	opacity: 0;
+	filter: alpha(opacity=1);
+	width: 48%;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 91%;
+}
+.transparent-btns_nav.next {
+	left: auto;
+	right: 0;
+}
+.large-btns_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	opacity: 0.6;
+	text-indent: -9999px;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: #000 url("../images/themes.gif") no-repeat left 50%;
+	width: 38px;
+}
+.large-btns_nav:active {
+	opacity: 1.0;
+}
+.large-btns_nav.next {
+	left: auto;
+	background-position: right 50%;
+	right: 0;
+}
+.centered-btns_nav:focus, .transparent-btns_nav:focus, .large-btns_nav:focus {
+	outline: none;
+}
+.centered-btns_tabs, .transparent-btns_tabs, .large-btns_tabs {
+	margin-top: 10px;
+	text-align: center;
+	width:100%;
+	*width: auto;
+	display:block;
+	*margin-left:45%;
+}
+.centered-btns_tabs li, .transparent-btns_tabs li, .large-btns_tabs li {
+	display:inline-block;
+	*display:inline;
+	*float:left;
+	*margin-left:5px;
+	margin-right: 5px;
+}
+.centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a {
+	text-indent: -9999px;
+	overflow: hidden;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	display: inline-block;
+ 	*display: block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #c1c1c1;
+	float:left;
+}
+.centered-btns_here a, .transparent-btns_here a, .large-btns_here a {
+	background: #5c5c5c;
+	border: 1px solid #5c5c5c;
+	display:inline-block;
+	*display:block;
+	border-radius:15px;
+}
+/* Themes End */
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+}

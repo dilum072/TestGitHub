@@ -1,0 +1,104 @@
+#top-menu {
+	display: none;
+}
+
+/*@media only screen and (min-width:320px) and (max-width:767px) {*/
+@media only screen and (max-width:767px) {
+#top-menu {
+	display: block;
+	float: right;
+	font-size: 1.35em;
+	line-height: 27px;
+	position: absolute;
+	right: 250px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	cursor:pointer;
+}
+#top-menu-nav.js {
+	display: none;
+}
+ul#top-menu-nav {
+	width: 100%;
+	position: absolute;
+	top: 28px;
+	left: 0px;
+	z-index: 9999;
+}
+ul#top-menu-nav li {
+	width: 100%;
+	border-right: none;
+}
+ul#top-menu-nav li a {
+	color: #000;
+	display: block;
+	font-size: 16px;
+	line-height: 27px;
+	padding: 4px 10px;
+	width: auto;
+	background: #ddd;
+	text-align: center;
+}
+ul#top-menu-nav li a:hover {
+	background-color: #000;
+	color: #ccc;
+}
+.toprow-menu.right {
+	display: block;
+}
+}
+
+@media only screen and (max-width:640px) {
+#top-menu {
+	right: 215px;
+}
+}
+
+@media only screen and (max-width:568px) {
+#top-menu {
+	right: 180px;
+}
+}
+
+@media only screen and (max-width:533px) {
+#top-menu {
+	right: 168px;
+}
+}
+
+@media only screen and (max-width:480px) {
+#top-menu {
+	right: 140px;
+}
+}
+
+@media only screen and (max-width:400px) {
+#top-menu {
+	right: 111px;
+}
+}
+
+@media only screen and (max-width:360px) {
+#top-menu {
+	right: 95px;
+}
+}
+
+@media only screen and (max-width:320px) {
+#top-menu {
+	right: 82px;
+}
+}
+
+/*@media only screen and (min-width:320px) and (max-width:479px) {*/
+@media only screen and (max-width:479px) {
+
+}
+
+@media screen and (min-width: 768px) {
+#top-menu {
+	display: none;
+}
+}
+

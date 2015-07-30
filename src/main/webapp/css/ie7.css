@@ -1,0 +1,608 @@
+*+html h1 {
+	width: 100%;
+	margin-bottom: 10px;
+	line-height: 46px;
+}
+/* Searchbar/Shopcart Bar start */
+*+htmlheader .cart-search-block {
+	margin-right: 23px;
+}
+/*************************** Body CSS Start */
+*+html .new-product .thumbnail .caption .btn-group > .btn {
+	float: none;
+}
+*+html .new-product .thumbnail .caption .dropdown-menu {
+	margin-left: 0px;
+}
+/*************************** Body CSS End */
+
+
+
+/*************************** Footer CSS Start */
+*+html .btn-showup {
+	position: absolute;
+	bottom: -12px;
+}
+/*************************** Footer CSS End */
+
+
+
+/*************************** Inner Page CSS Start */
+
+/****** LEFT COL Start *****/
+/* Login*/
+*+html .leftcol-items {
+	width: 100%;
+}
+*+html .leftcol-items .col-md-4 {
+	float: left;
+	min-width: 0;
+	background-color: #FFF;
+}
+*+html .lc-log-head {
+	width: 100%;
+}
+*+html .lc-log-body {
+	width: 81%;
+}
+*+html .lc-log-block .form-group {
+	width: 100%;
+}
+*+html .lc-log-block input {
+	line-height: 20px;
+	width: 85%;
+	height: 20px;
+}
+*+html .lc-log-block .btn-primary {
+	height: 40px;
+}
+*+html .leftcol-login.community-typeblock input[type="radio"], *+html .leftcol-login.community-typeblock input[type="checkbox"] {
+	float: left;
+	width: auto;
+}
+/* Merchant List */
+*+html .m-list-block {
+	width: 90%;
+}
+*+html .m-list-imgouter img {
+	width: 28%;
+}
+/* list-group css end */
+*+html .leftmenu .badge {
+	margin-top: -28px;
+}
+/* Common left Content Block css Start */
+*+html .common-left-cont-block {
+	width: 185px;
+}
+/****** LEFT COL End *****/
+
+/****** Right COL Start *****/
+*+html .breadcrumb > li {
+	background: url(../images/devider-Breadcrumb.png) no-repeat left 4px;
+	float: left;
+	padding-left: 10px;
+	margin-right: 5px;
+}
+*+html .breadcrumb > li:first-child {
+	background: none;
+	padding: 0;
+}
+/****** Right COL End *****/
+
+/***** mCommunity Blog page Start *****/
+*+html .mcom-threecoll-block .col-block {
+	width: 182px;
+}
+/***** mCommunity Blog page End *****/
+
+/* Latest Blog Posts Start */
+*+html .mcom-blog-posts {
+	width: 90%;
+}
+*+html .mcom-blog-posts .post-outer {
+	width: 86.6%;
+}
+*+html .mcom-blog-posts .post-header {
+	width: 400px;
+}
+*+html .mcom-blog-posts .post-timestamp {
+	width: 89px;
+}
+/* Latest Blog Posts End */
+/***** mCommunity Blog page End *****/
+
+/***** Press Releases page Start *****/
+/* TAB - custom inclusion of right, left and below tabs Start */
+*+html .latestnews-block .tabbable {
+	float: left;
+	width: 100%;
+}
+*+html .latestnews-block .tabs-right > .nav-tabs {
+	padding-left: 0%;
+	margin-left: 3%;
+}
+*+html .latestnews-block .tabs-right > .nav-tabs > li {
+	padding-top: 8px;
+}
+*+html .latestnews-block .tabs-right > .nav-tabs > li > a {
+	padding-top: 5px;
+}
+*+html .latestnews-block .news-title {
+	width: 56%;
+}
+*+html .latestnews-block .img-block {
+	width: 55%;
+}
+/* TAB - custom inclusion of right, left and below tabs End */
+/***** Press Releases page End *****/
+
+/***** Store Finder page Start *****/
+/* Store Finder css */
+*+html .locfiner-outer .loc-filter-block {
+	width: 91.5%;
+}
+*+html .locfiner-outer .loc-filter-block .form-group {
+	margin: 0;
+	padding: 0;
+}
+*+html .locfiner-outer .loc-filter-block .form-group .form-control {
+	width: 400px;
+}
+*+html .locfiner-outer .loc-filter-block .form-group input[type="text"] {
+	height: 15px;
+	width: 375px;
+}
+*+html .locfiner-outer .loc-filter-block .form-group input[type="button"] {
+	margin-top: 5px;
+}
+*+html .locfiner-outer .loc-filter-block .form-group .col-md-9 {
+	padding-top: 5px;
+	width: 370px;
+	margin-bottom: 0px;
+	float: left;
+}
+*+html .locfiner-outer .loc-filter-block .form-group .form-control input {
+	height: 15px;
+	padding: 0;
+}
+*+html .locfiner-outer .loc-filter-block .form-group a {
+	margin-top: -30px;
+}
+*+html .mob-outlets-block .col-md-8 {
+	width: 57.9999%;
+}
+/* Mobitel Outlets css */
+/***** Store Finder page End *****/
+
+/***** Budget Roaming page Start *****/
+*+html #tab_block .views-exposed-form input[value="Apply"], *+html #tab_block .views-exposed-form input[value="Reset"] {
+	height: 35px;
+	width: 100px;
+}
+/***** Budget Roaming page End *****/
+
+/* Three col Blocks css Start */
+*+html .threecol-block-outer div.column {
+	width: 170px;
+}
+*+html .threecol-block-outer div.column .col-inner .my-custom-menu-wrapper div a {
+	width: 90%;
+}
+/***** feedback-form page Start *****/
+*+html #webform-client-form-233 {
+	width: 600px;
+}
+*+html .form-item.webform-component.webform-component-textfield input, *+html .form-item.webform-component.webform-component-email input {
+	line-height: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 95%;
+}
+*+html .form-textarea-wrapper textarea {
+	width: 96.3%;
+}
+*+html .second-options .webform-component {
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+/***** feedback-form page End *****/
+
+/***** Site Map page Start *****/
+*+html #site-map .site-map-menus .site-map-box-menu-main-menu-new li.first_level, *+html #site-map .site-map-menus .site-map-box-menu-menu-top-menu-new li.first_level, *+html #site-map .site-map-menus .site-map-box-menu-menu-about-us li.first_level, *+html #site-map .site-map-menus .site-map-box-menu-menu-support li.first_level {
+	padding-left: 5px;
+	width: 640px;
+	margin-bottom: 10px;
+	float: none;
+}
+/***** Site Map page End *****/
+
+/* Modal popup start */
+*+html .modal-dialog {
+	width: 700px;
+}
+*+html .modal-dialog {
+	width: 800px;
+}
+*+html .modalbody-inner {
+	width: 525px;
+	height: 410px;
+}
+*+html .modal-body .form-control {
+	padding: 0;
+}
+*+html button.close {
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 100;
+}
+*+html .modal-body.myacc {
+	padding: 10px 12px;
+}
+*+html .modalbody-innerright .content {
+	float: none;
+}
+/* Modal popup end */
+
+/***** Shop Cart page Start *****/
+*+html .tabs {
+	float: left;
+}
+*+html #quicktabs-shop {
+	float: left;
+	width: 910px;
+	clear: both;
+}
+*+html #quicktabs-shop .quicktabs_main.quicktabs-style-basic {
+	width: 890px;
+}
+*+html .e-result-area {
+	float: left;
+	height: auto;
+	width: 680px;
+}
+*+html .shop_main {
+	width: 297px;
+}
+*+html #quicktabs-container-shop .view-filters {
+	float: left;
+	margin-top: -52px;
+	width: 200px;
+}
+*+html #quicktabs-shop .views-exposed-widget label {
+	border-bottom: 1px solid #3AC22A;
+	color: #2E2E2E;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 5px 0;
+	text-decoration: none;
+}
+*+html #quicktabs-shop .item-list ul.quicktabs-tabs li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	list-style: none outside none;
+	background-color: #F1F1F1;
+	border: 1px solid #D1D1D1;
+	display: block;
+	margin-bottom: -1px;
+	margin-left: -8px;
+	padding: 10px;
+	width: 115px;
+	float: left;
+}
+*+html #quicktabs-shop .item-list ul.quicktabs-tabs li.first {
+	margin-left: 10px
+}
+/***** Shop Cart page End *****/
+
+/***** Compare Products page Start *****/
+/* cloud-zoom-container Start */
+/* Button */
+*+html .add-to-cart .node-add-to-cart {
+	line-height: 32px;
+}
+*+html .para-block .link-wrapper {
+	margin-top: 10px;
+}
+/***** Compare Products page End *****/
+
+/***** User account page Start *****/
+*+html ul.primary {
+	height: 32px;
+	width: 98%;
+}
+*+html ul.primary li a {
+	background: none repeat scroll 0 0 #F1F1F1;
+	border-radius: 5px 5px 0 0;
+	color: #002E87;
+	font-family: 'Roboto-Medium';
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 6px 10px;
+	display: inline-block;
+}
+/* Inner */
+*+html #user-register-form .form-submit, #user-login .form-submit, #user-pass .form-submit, *+html #user-register-form .form-submit, #user-login .form-submit, #user-pass .form-submit, #user-profile-form .form-submit {
+	line-height: 32px;
+}
+/* User Edite Start */
+*+html div.form-item div.password-suggestions {
+	width: 95%;
+}
+/* User Edite End */
+/***** User account page End *****/
+
+
+/* Warning Messages Start */
+*+html div.warning, .warning {
+	width: 91%;
+}
+/* Warning Messages End */
+
+/* My Account CSS Start *************************************************/
+*+html .patt-block.gray, 
+*+html .patt-block.blue,
+*+html .patt-block.blue-2, 
+*+html .patt-block.pln {
+	width: 95.4%;
+}
+*+html .patt-block .colblock-four ul li {
+	width: 140px;
+}
+*+html .colblock-footer {
+	bottom: -25px;
+	right: 30px;
+}
+/* colblock-three Start */
+*+html .patt-block .colblock-four ul li {
+	width: 23.27%;
+}
+/* colblock-three End */
+
+/* colblock-four Start */
+*+html .patt-block .colblock-three ul li {
+	width: 31.59%;
+}
+/* colblock-four End */
+/* My Account list Start */
+*+html .myacc-list .list-row {
+	width: 91.3%;
+}
+*+html .myacc-list .list-row .list-right {
+	margin-top: -12px;
+}
+/* My Account list End */
+*+html .btn-default.disabled, *+html .btn-default[disabled], *+html fieldset[disabled] .btn-default {
+	padding: 6px 0px;
+}
+/* User Detail Start */
+*+html .userdetail-outer {
+	border-top: 1px solid #9f9f9f;
+	padding-left: 130px;
+	min-height: 123px;
+	width: 507px !important;
+}
+*+html .userdetail-catblock {
+	height: 65px;
+}
+*+html .userdetail-outer .usage-left {
+	width: 320px;
+}
+*+html .userdetail-outer .usage-right {
+	width: 127px;
+}
+*+html .userdetail-outer .usage-right span {
+	line-height: 24px;
+}
+*+html .usagecat-block {
+	width: 100%;
+}
+*+html .usagecat-block h1 {
+	top: -55px !important;
+	padding-top: 0;
+	padding-bottom: 0;
+	width: auto;
+}
+*+html .usagecat-block .userdetail-outer {
+	width: 480px !important;
+}
+*+html .usagecat-block .userdetail-outer .usage-left {
+	width: 300px;
+}
+/* Toggle Start */
+*+html .themes .toggle {
+	height: 20px;
+	padding: 4px;
+	width: 94px;
+}
+*+html .toggle-inner {
+	margin-left: 0px;
+	width: 172px;
+}
+*+html .toggle-on {
+	height: 20px;
+	line-height: 20px;
+	width: 86px;
+}
+*+html .toggle-blob {
+	height: 20px;
+	margin-left: -14px;
+	width: 20px;
+}
+*+html .toggle-off {
+	height: 20px;
+	line-height: 20px;
+	width: 86px;
+}
+/* Toggle End */
+
+
+
+*+html .myacc-form-block .form-control {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 5px 0;
+	line-height: 35px;
+}
+*+html .col-lg-offset-3 {
+	margin-left: 28%;
+}
+*+html .row.inner-rightcol-toprow .col-md-9 {
+	width: 95%;
+}
+/* Feature Status Start */
+*+html .formstyle-block .col-lg-6.col-md-6.col-sm-12 {
+	width: 327px;
+}
+/* Feature Status End */
+*+html .catblock-list-outer .inner .userdetail-catblock {
+	height: 85px;
+	width: 105px;
+}
+*+html .formstyle-block.style-two .col p {
+	padding-left: 45px;
+	width: 170px;
+}
+/* User Detail Start */
+/* User Detail End */
+
+*+html .col-lg-12 {
+	width: 95.5%;
+}
+/***** Common Tab css Start *****/
+*+html .nav-tabs > li {
+	float: left;
+}
+/***** Common Tab css End *****/
+
+/***** Usage Filter css Start *****/
+*+html .usage-filter-block input, *+html .usage-filter-block select {
+	height: 22px;
+}
+*+html .usage-filter-block input {
+	margin-left: 15px;
+}
+*+html .usage-filter-block .form-control {
+	padding: 0;
+}
+/***** Usage Filter css End *****/
+
+*+html .nav > li > a {
+	position: static;
+}
+*+html usage-filter-block {
+	padding-bottom: 5px;
+}
+*+html .usage-filter-block .col-lg-6.col-md-6 {
+	width: 45.2%;
+	float: left;
+}
+*+html .usage-filter-block .control-label {
+	float: left;
+	width: 30%;
+}
+*+html .usage-filter-block .col-lg-7.col-md-7 {
+	float: left;
+	width: 47%;
+	margin-top: 5px;
+}
+/* My Account CSS End *************************************************/
+
+/*************************** Inner Page CSS End */
+
+
+
+/* ie 7 Bootstrap col width Fixed *************************************/
+/* Home */
+*+html .col-sm-6.col-md-3 {
+	width: 21%;
+}
+*+html .col-sm-6.col-md-4 {
+	width: 30%;
+}
+/* Inner - Plans and Rates */
+*+html .col-md-4 {
+	width: 30.5%;
+}
+*+html .col-md-8 {
+	width: 60%;
+}
+*+html .col-md-12 {
+	width: 97%;
+}
+*+html .col-md-6.col-lg-3 {
+	width: 20%;
+}
+*+html .col-md-6.col-lg-9 {
+	width: 70%;
+}
+*+html .col-xs-12.col-sm-6.col-md-8 {
+	width: 55%;
+}
+*+html .botfooter-wrapper .col-xs-6.col-md-4 {
+	width: 30%;
+	float: right;
+}
+/*******/
+/* Tab */
+*+html #tab_block .tab_list {
+	float: left;
+	width: 100%;
+}
+*+html #tab_block .tab_list li {
+	float: left;
+}
+*+html .field-content table tr td {
+	border-top: 1px solid #ccd5e7;
+	padding: 5px 0;
+}
+*+html .packages-rounded-title {
+	font-size: 1.1em;
+}
+/* 4 - Col */
+*+html .package-items-4 .package-wrapper {
+	width: 82%;
+}
+.package-items-4 .packages-rounded-title {
+	height: 62px;
+	width: 62px;
+}
+/* 3 - Col */
+*+html .package-items-3 .package-wrapper {
+	width: 87%;
+}
+.package-items-3 .packages-rounded-title {
+	height: 110px;
+	width: 110px;
+}
+/* 2 - Col */
+*+html .package-items-2 .package-wrapper {
+	width: 91%;
+}
+*+html .package-items-2 .packages-rounded-title {
+	height: 150px;
+	width: 150px;
+}
+/* 1 - Col */
+*+html .package-items-1 .package-wrapper {
+	width: 96%;
+}
+*+html .package-items-1 .packages-rounded-wrapper {
+	width: 170px;
+}
+*+html .package-items-1 .packages-rounded-title {
+	height: 130px;
+	width: 130px;
+}
+*+html .package-items-1 .package-wrapper .field-content {
+	width: 50%;
+}
+*+html .package-wrapper .field-content {
+	width: 90%;
+}

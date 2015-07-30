@@ -1,0 +1,128 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 24, 2014, 4:02:39 PM
+    Author     : manjulas
+*/
+
+.myAcc-home-left {
+    background: none repeat scroll 0 0 #e2f0ff;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    padding: 20px 37px;
+    height: 250px;
+}
+.myAcc-home-right {
+    background: url("../images/my-account/my-account-home-bg.png") no-repeat scroll right bottom #bbe2fe;
+    border-radius: 0 5px 5px 0;
+    float: left;
+    height: 250px;
+    margin-left: -30px;
+    padding: 20px 30px;
+}
+.myAcc-home-right p span {
+    font-size: 105%;
+    font-weight: bold;
+}
+.skype > a {
+    background: url("../images/my-account/skype-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 29px;
+    line-height: 27px;
+    padding-left: 32px;
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width:480px) {
+    .myAcc-home-left {
+        background: none repeat scroll 0 0 #e2f0ff;
+        border-radius: 5px 5px 0 0;
+        float: left;
+        height: auto;
+        padding: 20px 37px;
+    }
+    .myAcc-home-right {
+        background: url("../images/my-account/my-account-home-bg.png") no-repeat scroll right bottom #bbe2fe;
+        border-radius: 0 0 5px 5px;
+        float: left;
+        height: auto;
+        margin-left: 0;
+        padding: 20px 30px;
+    }
+    .myAcc-home-right p span {
+        clear: both;
+        font-size: 138%;
+        font-weight: bold;
+        line-height: 116%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .myAcc-home-left {
+        background: none repeat scroll 0 0 #e2f0ff;
+        border-radius: 5px 5px 0 0;
+        float: left;
+        height: auto;
+        padding: 20px 37px;
+    }
+    .myAcc-home-right {
+        background: url("../images/my-account/my-account-home-bg.png") no-repeat scroll right bottom #bbe2fe;
+        border-radius: 0 0 5px 5px;
+        float: left;
+        height: auto;
+        margin-left: auto;
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .myAcc-home-right p span {
+        clear: both;
+        font-size: 138%;
+        font-weight: bold;
+        line-height: 116%;
+    }
+}
+@media only screen and (width:768px){
+    .myAcc-home-right {
+        background: url("../images/my-account/my-account-home-bg.png") no-repeat scroll right bottom #bbe2fe;
+        border-radius: 0 5px 5px 0;
+        float: left;
+        height: 314px;
+        margin-left: -30px;
+        padding: 20px 30px;
+        width: 120%;
+    }
+    .myAcc-home-left {
+        background: none repeat scroll 0 0 #e2f0ff;
+        border-radius: 5px 0 0 5px;
+        float: left;
+        height: auto;
+        padding: 20px 37px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px){
+    .myAcc-home-left {
+        background: none repeat scroll 0 0 #e2f0ff;
+        border-radius: 5px 0 0 5px;
+        float: left;
+        height: 335px;
+        padding: 20px 37px;
+    }
+    .myAcc-home-right {
+        background: url("../images/my-account/my-account-home-bg.png") no-repeat scroll right bottom #bbe2fe;
+        border-radius: 0 5px 5px 0;
+        float: left;
+        height: 335px;
+        margin-left: -30px;
+        padding: 20px 30px;
+        
+    }
+    .myAcc-home-left > p {
+        font-size: 12px;
+    }
+
+}
+
